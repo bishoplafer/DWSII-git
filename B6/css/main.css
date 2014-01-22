@@ -1,22 +1,86 @@
 /* this is the main css stylesheet */
 
+div#container {
+	width: 90%;
+	margin: auto;
+	position: relative;
+}
 
+div#one {
+	background-color: #66023C;
+	color: white;
+	top: 1%;
+	left: 1%;
+	position: absolute;
+}
 
+div#two {
+	background-color: #BADA55;
+	z-index: 1;
+	position: relative;
+}
 
 /* Media Querries
 ---------------------------------------------------------*/
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media screen and (min-width: 768px) and (max-width: 959px) {
-		
-	}
+
+		div#one {
+			background-color: #BADA55;
+			color: black;
+			z-index: 1;
+			position: relative;
+		}
+
+		div#two {
+			background-color: #66023C;
+			color: white;
+			top: 10%;
+			left: 10%;
+			position: absolute;
+		}
 
 	/* Mobile Landscape Size to Tablet Portrait (devives and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+
+		div#one {
+			background-color: #BADA55;
+			color: black;
+			z-index: 0;
+			position: relative;
+		}
+
+		div#two {
+			background-color: #66023C;
+			color: white;
+			top: 20%;
+			left: 20%;
+			position: absolute;
+		}
 		
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
+	@media screen and (max-width: 479px) {
+
+		div#one {
+			background-color: #66023C;
+			color: white;
+			top: 20%;
+			left: 20%;
+			position: absolute;
+		}
+
+		div#two {
+			background-color: #BADA55;
+			color: white;
+			z-index: 1;
+			position: relative;
+		}
+
+		div#two h3 {
+			color: white;
+		}
 
 	}
