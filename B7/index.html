@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>B7 CSS Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+                              <!-- #container div -->
+    <div id="container">
+      <div id="form1">
+        <form action="demo_form1.asp" autocomplete="on">
+              <label for="fname"> First Name:</label>
+              <input type="text" name="fname" placeholder="Please enter your first name" autofocus required />
+              <br>
+              <label for="lname">Last Name:</label>
+              <input type="text" name="lname" placeholder="Please enter your last name" required />
+              <br>
+              <label for="email">Email:</label>
+              <input type="email" name="email" autocomplete="off" placeholder="Please enter your email" required />
+              <br>
+              <label for="url">Website:</label>
+              <input type="url" name="url" placeholder="Please enter your website's url" />
+              <br>
+              <label for="browsers">Browsers:</label>
+              <select list="browsers" name="browsers">
+                <option value="Internet Explorer">Internet Explorer</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Opera">Opera</option>
+                <option value="Safari">Safari</option>
+              </select>
+              <br>
+              <hr>
+              <label>Choose Your Favorite:</label>
+              <br>
+              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Pokemon Red</label>
+              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Pokemon Blue</label>
+              <br>
+              <hr>
+              <label>Check these out:</label>
+              <br>
+              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+              <br>
+              <hr>
+              <label for="comments">Contact Us:</label>
+              <br>
+              <textarea name="comments" id="comments" placeholder="Questions, Comments, or Concerns"></textarea>
+              <br>
+              <input type="Submit" id="submit">
+        </form>
+      </div> <!-- end #form1 -->
+    </div> <!-- end #container -->
+  </body>
+</html>

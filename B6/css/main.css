@@ -63,6 +63,7 @@ div#four {
 			left: 10%;
 			position: absolute;
 		}
+	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devives and browsers) */
 	@media screen and (min-width: 480px) and (max-width: 767px) {
