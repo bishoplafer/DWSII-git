@@ -16,19 +16,40 @@
                               <!-- #container div -->
     <div id="container">
       <div id="form1">
-        <form action="demo_form1.asp" autocomplete="on">
+        <form action="demo_form1.asp" autocomplete="on" oninput="num.value=range.value">
+          <ol id="textInput">
+            <li>
               <label for="fname"> First Name:</label>
-              <input type="text" name="fname" placeholder="Please enter your first name" autofocus required />
               <br>
+              <input type="text" name="fname" maxlength="30" placeholder="Please enter your first name" autofocus required />
+              <br>
+            </li>
+            <li>
               <label for="lname">Last Name:</label>
-              <input type="text" name="lname" placeholder="Please enter your last name" required />
               <br>
+              <input type="text" name="lname" maxlength="30" placeholder="Please enter your last name" required />
+              <br>
+            </li>
+            <li>
+              <label for="bday">Birthday:</label>
+              <br>
+              <input type="date" name="bday">
+              <br>
+            <li>
               <label for="email">Email:</label>
+              <br>
               <input type="email" name="email" autocomplete="off" placeholder="Please enter your email" required />
               <br>
+            </li>
+            <li>
               <label for="url">Website:</label>
-              <input type="url" name="url" placeholder="Please enter your website's url" />
               <br>
+              <input type="url" name="url" placeholder="http://www.example.com" />
+              <br>
+            </li>
+          </ol> <!-- end #textInput -->
+          <ol id="nonText">
+            <li>
               <label for="browsers">Browsers:</label>
               <select list="browsers" name="browsers">
                 <option value="Internet Explorer">Internet Explorer</option>
@@ -38,24 +59,42 @@
                 <option value="Safari">Safari</option>
               </select>
               <br>
+            </li>
+            <li>
               <hr>
               <label>Choose Your Favorite:</label>
               <br>
               <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Pokemon Red</label>
               <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Pokemon Blue</label>
               <br>
+            </li>
+            <li>
               <hr>
               <label>Check these out:</label>
               <br>
               <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
               <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
               <br>
+            </li>
+            <li>
+              <hr>
+              <label>Pick a number between 0 and 10:</label>
+              <br>
+              <input type="range" id="range" value="5" min="0" max="10">
+              <output name="num" for="range">5</output>
+              <br>
+            </li>
+            <li>
               <hr>
               <label for="comments">Contact Us:</label>
               <br>
               <textarea name="comments" id="comments" placeholder="Questions, Comments, or Concerns"></textarea>
               <br>
+            </li>
+            <li>
               <input type="Submit" id="submit">
+            </li>
+          </ol>
         </form>
       </div> <!-- end #form1 -->
     </div> <!-- end #container -->
