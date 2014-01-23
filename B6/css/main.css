@@ -88,12 +88,18 @@ div#four {
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media screen and (max-width: 479px) {
 
-		div#three {
+		div#one {
+			background-color: blue;
+			z-index: 2;
+		}
+
+		div#two {
 			background-color: #66023C;
 			color: white;
-			top: 20%;
+		}
+
+		div#three {
 			left: 20%;
-			position: absolute;
 		}
 
 		div#four {
