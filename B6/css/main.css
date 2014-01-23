@@ -86,7 +86,7 @@ div#four {
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media screen and (max-device-width: 479px) {
+	@media screen and (max-width: 479px) {
 
 		div#three {
 			background-color: #66023C;
