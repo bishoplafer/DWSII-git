@@ -4,6 +4,23 @@ div#container {
 	margin: auto;
 	position: relative;
 }
+.box {
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    width: 32%;
+    height: 32%;
+    background-color: #FFF;
+    -webkit-transition:width 2s ease, height 2s ease, background-color 2s ease, -webkit-transform 2s ease;
+    transition:width 2s ease, height 2s ease, background-color 2s ease, transform 2s ease;
+}
+.box:hover {
+    background-color: #66023C;
+    width: 100%;
+    height: 100%;
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
 
 
 /* Media Querries
@@ -11,15 +28,31 @@ div#container {
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media screen and (min-width: 768px) and (max-width: 959px) {
-
+		.box {
+			width: 45%;
+			height: 45%;
+		}
+		.box:hover {
+    		background-color: #66023C;
+    		width: 100%;
+    		height: 100%;
+    		-webkit-transform:skewX(33deg);
+    		transform:skewX(33deg);
+		}
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devives and browsers) */
 	@media screen and (min-width: 480px) and (max-width: 767px) {
-
+		.box {
+			width: 90%;
+			height: 90%;
+		}
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media screen and (max-width: 479px) {
-
+		.box {
+			width: 90%;
+			height: 90%;
+		}
 	}
