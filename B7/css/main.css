@@ -1,5 +1,4 @@
 /* this is the main css stylesheet */
-
 div#container {
 	width: 90%;
 	margin: auto;
@@ -52,15 +51,36 @@ ol#textInput input {
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media screen and (min-width: 768px) and (max-width: 959px) {
-
+		div#container {
+			width: 100%;
+			margin: auto;
+			position: relative;
+		}
+		div#form1{
+			width: 80%;
+		}
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devives and browsers) */
 	@media screen and (min-width: 480px) and (max-width: 767px) {
-		
+		div#container {
+			width: 100%;
+			margin: auto;
+			position: relative;
+		}
+		div#form1{
+			width: 80%;
+		}
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media screen and (max-device-width: 479px) {
-
+	@media screen and (max-width: 479px) {
+		div#container {
+			width: 100%;
+			margin: auto;
+			position: relative;
+		}
+		div#form1{
+			width: 80%;
+		}
 	}
