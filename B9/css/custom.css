@@ -1,0 +1,38 @@
+/* this is a custom css stylesheet */
+body {
+	padding-top: 70px;
+}
+
+footer {
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: #999;
+	text-align: center;
+}
+
+div#socialmedia {
+	display: inline;
+}
+
+.hempForVictory {
+	width: 100%;
+}
+
+/* Media Querries
+---------------------------------------------------------*/
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media screen and (min-width: 768px) and (max-width: 959px) {
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devives and browsers) */
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media screen and (max-width: 479px) {
+
+	}
